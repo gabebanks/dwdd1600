@@ -1,0 +1,192 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*Header Comment*/
+
+header {
+    background-color: #eaeaea;
+    padding: 1.5rem 2%;
+}
+
+header h1 {
+    margin: 0;
+    color: #3772A6;
+}
+
+header p {
+    margin: 0;
+    color: #3772A6;
+    letter-spacing: .5px;
+}
+
+/*Nav Comment*/
+
+nav {
+    background-color: #3772A6;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #c5b358;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+
+nav .fluid a {
+    background-color: #c5b358;
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/*Main Comment*/
+
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #A65221;
+}
+
+main h2 {
+    color: #3772A6;
+    margin-block-end: 2rem;
+}
+
+main h2 {
+    color: #3772A6;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    border-radius: .75rem;
+
+}
+
+main dl dt {
+    color: black;
+    font-weight: 700;
+
+}
+
+main dl dd {
+    font-size: .9rem;
+    padding: .2rem;
+
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main li {
+    line-height: 125%;
+    margin-block-end: .5rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #c5b358;
+    padding: .5rem;
+    inline-size: 12.5rem;
+    border: .75px solid;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #3772A6;
+}
+
+main a:hover {
+    color: #A65221;
+
+}
+
+/*Footer Comment*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #3772A6;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a {
+    color: #3772A6;
+}
+
+
+figure.gallery {
+    width: 30%;
+    margin: 0 0 0 2%;
+    align-items: center;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+figure.gallery figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: black;
+    background-color: #eaeaea;
+    border-radius: 10px 10px 10px 10px;
+    padding: .5rem 0;
+}
+
+figure.intro-page {
+    float: right;
+    width: 30%;
+    margin: 0 0 0 2%;
+}
+
+figure.intro-page img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+figure.intro-page figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: black;
+    background-color: #eaeaea;
+    border-radius: 10px 10px 10px 10px;
+    padding: .5rem 0;
+}
