@@ -1,0 +1,334 @@
+/*Prevent problems with diffrent browers*/
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* header stuff here */
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #3772A6;
+}
+
+header p {
+    margin: 0;
+    color: #3772A6;
+    letter-spacing: .5px;
+}
+
+/*Nav */
+/*Only for Big Screens*/
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #3772A6;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 1vw;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        display: block;
+        padding: .8rem 1rem;
+    }
+
+    nav .fluid a {
+        background-color: #A65221;
+        color: white;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    main ol {
+        padding: .5rem 4vw;
+        background-color: #efefef;
+        border-radius: .75rem;
+
+    }
+
+}
+
+/*Code for Small Screens*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #A65221;
+
+    }
+
+    nav .fluid a {
+        background-color: #A65221;
+        background-image: linear-gradient(#A65221, #6e3615);
+        color: white;
+
+    }
+
+    main ol {
+        padding: .5rem 7vw;
+        background-color: #efefef;
+        border-radius: .75rem;
+
+    }
+
+}
+
+/*Main Comment*/
+
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #A65221;
+}
+
+main h2 {
+    color: #3772A6;
+    margin-block-end: 2rem;
+}
+
+main h2 {
+    color: #3772A6;
+    margin: 0 0 .3rem 0;
+}
+
+
+main dl dt {
+    color: black;
+    font-weight: 700;
+
+}
+
+main dl dd {
+    font-size: .9rem;
+    padding: .2rem;
+
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main li {
+    line-height: 125%;
+    margin-block-end: .5rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #eaeaea;
+    padding: .5rem;
+    inline-size: 12.5rem;
+    border: .75px solid;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #3772A6;
+}
+
+main a:hover {
+    color: #A65221;
+
+}
+
+/*Footer Comment*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #3772A6;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a {
+    color: #3772A6;
+}
+
+
+figure.gallery {
+    width: 30%;
+    margin: 0 0 0 2%;
+    align-items: center;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+figure.gallery figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    flex-basis: 50%;
+    margin: 1rem 0vw;
+    padding: 1vw;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: black;
+    background-color: #eaeaea;
+    border-radius: 10px 10px 10px 10px;
+    padding: .5rem 0;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+figure.intro-page {
+    float: right;
+    width: 30%;
+    margin: 0 0 0 2%;
+}
+
+figure.intro-page img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    padding: .5vw;
+}
+
+figure.intro-page figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: black;
+    background-color: #eaeaea;
+    border-radius: 10px 10px 10px 10px;
+    padding: .5rem 0;
+}
+
+
+.contactform fieldset {
+    border: 1px solid #3772A6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+
+}
+
+.contactform legend {
+    color: white;
+    background-color: #3772A6;
+    font-size: .8rem;
+    padding: .5rem;
+    border-radius: 5px;
+
+}
+
+.contactform label {
+    margin: .5rem;
+}
+
+.appleproducts {
+    width: 100%;
+    margin: 0;
+
+}
+
+.appleproducts img {
+    width: 100%;
+    height: auto;
+}
+
+.contactform label,
+.contactform select,
+.contactform [type=text],
+.contactform [type=tel],
+.contactform [type=email],
+.contactform textarea {
+    display: block;
+}
+
+.contactform [type=text],
+.contactform [type=tel],
+.contactform [type=email],
+.contactform select,
+.contactform textarea {
+    border: 1px solid #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.contactform textarea {
+    height: 6rem;
+}
+
+.contactform input:required {
+    background-color: #fce4e4ee;
+}
+
+.contactform input:required:valid {
+    background-color: #E7FFCE;
+}
+
+.contactform [type=submit] {
+    background-color: #3772A6;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+
+}
