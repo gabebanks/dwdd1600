@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>NexTek: Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn about the what tech gadgets you should buy next.">
+    <meta name="author" content="Gabe Bankhead">
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <!-- Start of the page header. -->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="75" height="75">
+        <div>
+            <h1>NexTek</h1>
+            <p>Latest Tech Gadgets</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="latest-tech-news.html">Tech News</a></li>
+            <li><a href="college-gadgets.html">Tech Gadgets</a></li>
+            <li class="fluid"><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="desktop-wallpapers.html">Wallpapers</a></li>
+            <li><a href="visit-us.html">Visit Us</a></li>
+            <li><a href="collab.html">Collaboration</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <h1>More Content Coming Soon!</h1>
+
+        <form method="get" class="contactform" action="thanks.html">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name* <input type="text" name="fname" required placeholder="John"></label>
+                <label>Last Name* <input type="text" name="lname" required placeholder="Doe"></label>
+                <label>Cell Number* <input type="tel" name="phone" required placeholder="555-555-5555"></label>
+                <label>Email Address* <input type="email" name="email" required
+                        placeholder="john.doe@example.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Method</legend>
+                <label><input type="radio" name="method" value="call">Phone Call</label>
+                <label><input type="radio" name="method" value="text">Text Messaging</label>
+                <label><input type="radio" name="method" value="email">Email</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Purpose</legend>
+                <p>What would you like to talk to us about?</p>
+                <label><input type="checkbox" name="collegegadgets" value="selected">College Gadgets</label>
+                <label><input type="checkbox" name="businessgadgets" value="selected">Business Gadgets</label>
+                <label><input type="checkbox" name="newtech" value="selected">New Tech Consoltation</label>
+                <label><input type="checkbox" name="employment" value="selected">Employment Opportunities</label>
+
+                <br>
+
+                <label>How Did You Hear About NexTek?
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="morning">Friend or Collegue</option>
+                        <option value="noon">Instagram</option>
+                        <option value="noon">TikTok</option>
+                        <option value="afternoon">FaceBook</option>
+                        <option value="evening">X (Twitter)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <label>Any questions, comments, or concerns?
+                    <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Contact Request">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 &bull; Gabe Bankhead &bull; <a href="mailto:10918038@uvu.edu">Email Us</a></p>
+    </footer>
+</body>
+
+</html>
