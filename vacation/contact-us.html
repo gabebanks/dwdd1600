@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Budget Vacations</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Budget vacations to help create Unforgettable experiences">
+    <meta name="author" content="Gabriel Bankhead">
+
+    <link rel="stylesheet" href="vacationlook.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Raleway:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="images/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="site logo" width="75" height="75">
+        <div>
+            <h1>Budget Vacations</h1>
+            <p>Affordable &bull; Realistic &bull; Unforgettable</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="travel-tips.html">Travel Tips</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li class="fluid"><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>If you have any questions, thoughts, concerns, please reach out to us.</p>
+
+        <form method="get" class="contactform" action="thanks.html">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name* <input type="text" name="fname" required placeholder="John"></label>
+                <label>Last Name* <input type="text" name="lname" required placeholder="Doe"></label>
+                <label>Cell Number* <input type="tel" name="phone" required placeholder="555-555-5555"></label>
+                <label>Email Address* <input type="email" name="email" required
+                        placeholder="john.doe@example.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Package</legend>
+                <label><input type="radio" name="method" value="one">Package One: Family Travel</label>
+                <label><input type="radio" name="method" value="two">Package Two: Student Travel</label>
+                <label><input type="radio" name="method" value="three">Package Three: Business Travel</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Add Upgrades</legend>
+                <p><em>Additional Chrages May Apply</em></p>
+                <label><input type="checkbox" name="collegegadgets" value="selected"> luxury Suite</label>
+                <label><input type="checkbox" name="businessgadgets" value="selected">Beach Front</label>
+                <label><input type="checkbox" name="newtech" value="selected">Luxury Car Rental</label>
+                <label><input type="checkbox" name="employment" value="selected">Early Check-In</label>
+
+                <br>
+
+                <label>Please Select Check-In Time:
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="morning">8:00-11:00 AM</option>
+                        <option value="noon">11:00-3:00 PM</option>
+                        <option value="noon">3:00-6:00 PM</option>
+                        <option value="afternoon">6:00-9:00 PM</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Accommodations</legend>
+                <label>Any special accommodations we can make?
+                    <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Order">
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 &bull; Budget Vacations &bull; <a href="mailto:10918038@uvu.edu">Email Us</a></p>
+    </footer>
+
+</body>
+
+</html>

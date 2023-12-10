@@ -1,0 +1,364 @@
+/*-------- VACTION STYLE SHEET -------*/
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*------- HEADER BEGINS ------------*/
+
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+.sunnyhero {
+    width: 100%;
+    margin: 0;
+
+}
+
+.sunnyhero img {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    color: #004078;
+}
+
+header p {
+    margin: 0;
+    color: #004078;
+    letter-spacing: .5px;
+}
+
+/*------- NEXT TWO SECTIONS (NAV) --------------------*/
+/*------- MEIDA QUAERY BEGINS (BIG SCREENS) ----------*/
+
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #004078;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        display: block;
+        padding: .75rem 2rem;
+    }
+
+    nav .fluid a {
+        background-color: #6d9d83;
+        color: white;
+    }
+
+    main ol {
+        padding: .5rem 1vw;
+        background-color: #efefef;
+        border-radius: .75rem;
+
+    }
+
+    nav a:hover {
+        background-color: #2e4c66;
+    }
+
+}
+
+/*------ MEIDA QUAERY BEGINS (SMALL SCREENS) --------*/
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #004078;
+        color: white;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+    nav a:hover {
+        background-color: #2e4c66;
+    }
+
+
+    nav .fluid a {
+        background-color: #6d9d83;
+        background-image: linear-gradient(#6d9d83, #597565);
+        color: white;
+
+    }
+
+    main ol {
+        padding: .5rem 7vw;
+        background-color: #efefef;
+        border-radius: .75rem;
+
+    }
+
+    main ul li {
+        margin-left: 1rem;
+    }
+}
+
+/*--------- MAIN CONTENT BEGINS -----------*/
+
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #004078;
+}
+
+main h2 {
+    color: #6d9d83;
+    margin-block-end: 2rem;
+}
+
+main h2 {
+    color: #6d9d83;
+    margin: 0 0 .3rem 0;
+}
+
+
+main dl dt {
+    color: black;
+    font-weight: 700;
+
+}
+
+main dl dd {
+    font-size: .9rem;
+    padding: .2rem;
+
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main li {
+    line-height: 125%;
+    margin-block-end: .5rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #eaeaea;
+    padding: .5rem;
+    inline-size: 12.5rem;
+    border: .75px solid;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #004078;
+}
+
+main a:hover {
+    color: #6d9d83;
+
+}
+
+
+main ul {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    border-radius: .75rem;
+}
+
+div.modern {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+    border-radius: .75rem;
+}
+
+/*--------- GALLERY CONTENT BEGINS ------------*/
+
+
+figure.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+figure.gallery figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    flex-basis: 50%;
+    margin: 1rem 0vw;
+    padding-right: 1vw;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: black;
+    background-color: #eaeaea;
+    border-radius: 10px 10px 10px 10px;
+    padding: .5rem 0;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+/*--------- PACKAGE CONTENT BEGINS -------------*/
+
+figure.packagehawaii {
+    float: right;
+    width: 45%;
+    margin: 0 0 0 2vw;
+}
+
+figure.packagehawaii img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    padding: .5vw;
+}
+
+figure.packagehawaii figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*--------- FORM CONTENT BEGINS -------------*/
+
+.contactform label,
+.contactform select,
+.contactform [type=text],
+.contactform [type=tel],
+.contactform [type=email],
+.contactform textarea {
+    display: block;
+}
+
+.contactform [type=text],
+.contactform [type=tel],
+.contactform [type=email],
+.contactform select,
+.contactform textarea {
+    border: 1px solid #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.contactform textarea {
+    height: 6rem;
+}
+
+.contactform input:required {
+    background-color: #fce4e4ee;
+}
+
+.contactform input:required:valid {
+    background-color: #E7FFCE;
+}
+
+.contactform [type=submit] {
+    background-color: #004078;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    margin-top: 1rem;
+
+}
+
+.contactform fieldset {
+    border: 1px solid #6d9d83;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+
+}
+
+.contactform legend {
+    color: white;
+    background-color: #004078;
+    font-size: .8rem;
+    padding: .5rem;
+    border-radius: 5px;
+
+}
+
+.contactform label {
+    margin: .5rem;
+}
+
+/*--------- FOOTER CONTENT BEGINS -------------*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #004078;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a {
+    color: #004078;
+}
+
+/*--------- FOOTER CONTENT ENDS ---------------*/
